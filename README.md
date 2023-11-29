@@ -6,8 +6,10 @@ Procedure of installing PiHole on Rocky Linux 9 with SELinux that has worked for
 - a machine with Rocky Linux 9 installed and SELinux enabled
 - access to root user
 - a working internet connection
+- installed git (`dnf install -y git`)
+- cloned this repository (`git clone https://github.com/Norbiox/pihole_rockylinux9.git && cd pihole_rockylinux9`)
 
-## Detailed steps
+## Installation steps
 
 1. Set static IP address using `nmtui`
 2. Set context for PiHole installator: `export PIHOLE_SELINUX=true && export PIHOLE_SKIP_OS_CHECK=true`
